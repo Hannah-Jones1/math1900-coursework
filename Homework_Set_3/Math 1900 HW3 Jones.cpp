@@ -1,0 +1,35 @@
+/*
+Hannah Jones
+Math 1900 Homework
+Module 3: Formatted Output & Built-in Functions
+
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main(){
+
+	// Problem 1
+	srand(time(0)); 
+	cout << rand() << "\t" << rand() << "\t" << rand() << "\t" << rand() << "\t" << rand() << "\t" << endl; // These are raw unbounded numbers from rand()
+
+	// Problem 2
+	srand(time(0));
+	cout << rand() % 10 << "\t" << rand() % 10 << "\t" << rand() % 10 << "\t" << rand() % 10 << "\t" << rand() % 10 << "\t" << endl; // rand is constrained to numbers 0 - 9 by using a % modifier.
+
+	// Problem 3
+	srand(time(0));
+	cout << rand() % 10 + 1 << "\t" << rand() % 10 + 1 << "\t" << rand() % 10 + 1 << "\t" << rand() % 10 + 1 << "\t" << rand() % 10 + 1 << "\t" << endl;
+	
+	// Problem 4
+	srand(time(0));
+	string word = "Password";
+	int idx = rand() % 8;
+	cout << "Random Letter: " << word[idx];
+	 
+	return 0;
+}
+*/
